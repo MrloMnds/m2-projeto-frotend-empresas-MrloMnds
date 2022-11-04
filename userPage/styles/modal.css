@@ -1,0 +1,49 @@
+.modal-wrapper {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background-color: #4623A721;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+}
+.modal {
+    background-color: white;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: fit-content;
+    width: 25%;
+    padding: 2%;
+    gap: 2vh;
+    transform: translateY(-40px);
+}
+.modal>h2 {
+    font-size: var(--font-size-2);
+    font-weight: 700;
+}
+.modal>input {
+    font-size: var(--font-size-5);
+    padding-left: 5%;
+    height: 5vh;
+    color: #00000080;
+}
+.confirm-button {
+    height: 5.5vh;
+    color: white;
+    background-color: var(--color-brand-100);
+    border: none;
+    font-size: var(--font-size-5);
+    font-weight: 700;
+}
+.close-button {
+    position: absolute;
+    right: 2%;
+    top: 3%;
+    border: none;
+    background-color: transparent;
+}
+.close-button:hover, .confirm-button:hover, .logout:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,157 @@
+.modal-wrapper {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background-color: #4623A721;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+}
+.modal {
+    background-color: white;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: fit-content;
+    width: 25%;
+    padding: 2%;
+    gap: 2vh;
+    transform: translateY(-40px);
+}
+.modal>h2 {
+    font-size: var(--font-size-2);
+    font-weight: 700;
+}
+.modal>input, .modal>select {
+    font-size: var(--font-size-5);
+    padding-left: 5%;
+    height: 5vh;
+    color: #00000080;
+}
+.modal>select {
+    height: 5.5vh;
+}
+.confirm-button {
+    height: 5.5vh;
+    color: white;
+    background-color: var(--color-brand-100);
+    border: none;
+    font-size: var(--font-size-5);
+    font-weight: 700;
+}
+.close-button {
+    position: absolute;
+    right: 2%;
+    top: 3%;
+    border: none;
+    background-color: transparent;
+}
+.close-button:hover, .confirm-button:hover, .green-button:hover {
+    cursor: pointer;
+}
+.green-button {
+    height: 5.5vh;
+    color: white;
+    background-color: var(--color-alert-success);
+    border: none;
+    font-size: var(--font-size-5);
+    font-weight: 700;
+}
+.modal-delete {
+    background-color: white;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: fit-content;
+    width: 35%;
+    padding: 2%;
+    gap: 2vh;
+    transform: translateY(-40px);
+}
+.modal-delete>h2 {
+    font-size: var(--font-size-3);
+    font-weight: 700;
+}
+
+.department-modal {
+    background-color: white;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: fit-content;
+    width: 50%;
+    padding: 2%;
+    gap: 2vh;
+    transform: translateY(-40px);
+}
+.department-modal>h2 {
+    font-size: var(--font-size-2);
+    font-weight: 700;
+}
+.descrip-select {
+    display: flex;
+    justify-content: space-between;
+}
+.descrip-select>h3 {
+    font-size: var(--font-size-4);
+    font-weight: 700;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+.descrip-select>select {
+    width: 50%;
+    height: 6vh;
+    padding-left: 10px;
+    color: #00000080;
+    border: 1px solid #00000080;
+}
+.company-button {
+    display: flex;
+    justify-content: space-between;
+}
+.company-button>button {
+    width: 20%;
+}
+.department-users-ul {
+    background-color: #F8F8F8;
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    padding: 4%;
+    height: 31vh;
+    overflow-x: auto;
+}
+.department-users-ul>li {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 40%;
+    padding: 3%;
+    border-bottom: 2px solid var(--color-brand-100);
+}
+.department-users-ul>li>div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin-bottom: 15px;
+}
+.department-users-ul>li>div>h3 {
+    font-size: var(--font-size-4);
+    font-weight: 700;
+}
+.department-users-ul>li>button {
+    border: 2px solid var(--color-alert-error);
+    color: var(--color-alert-error);
+    background-color: transparent;
+    font-size: var(--font-size-5);
+    padding: 3%;
+    padding-inline: 15%;
+    margin-bottom: 5%;
+}
+.department-users-ul>li>button:hover {
+    cursor: pointer;
+}

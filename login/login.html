@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenzie Empresas - Login</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../globalStyles.css">
+    <link rel="stylesheet" href="../toast.css">
+    <link rel="stylesheet" href="./styles/login.css">
+    <link rel="stylesheet" href="./styles/dropDownLogin.css">
+</head>
+<body>
+    <main>
+        <header>
+            <div>
+                <img src="../assets/img/Ellipse 1.png" alt="">
+                <img class="title" src="../assets/img/Kenzie Empresas.png" alt="Kenzie Empresas">
+            </div>
+            <button class="dropdown"><img src="../assets/img/Vector.png" alt=""></button>
+            <div class="botoes-desktop">
+                <button class="login">Home</button>
+                <button class="register">Cadastrar</button>
+            </div>
+        </header>
+        <div hidden class="modal-dropdown">
+            <button hidden type="button" class="home-dropdown">Home</button>
+            <button hidden type="button" class="register-dropdown">Cadastro</button>
+        </div>
+        <section class="bckgrnd-img">
+            <img src="../assets/img/Rectangle 7.png" alt="Tres homens tendo uma reuniao">
+        </section>
+        <form>
+            <h1>Login</h1>
+            <p>Preencha os campos para realizar login</p>
+            <input id="email" type="email" placeholder="Seu e-mail">
+            <input id="password" type="password" placeholder="Sua senha">
+            <button type="submit" class="login-dropdown">Login</button>
+            <p class="ou">ou</p>
+            <button type="button" id="register" class="register-dropdown">Cadastre-se</button>
+        </form>
+    </main>
+
+    <script type="module" src="./scripts/login.js"></script>
+</body>
+</html>

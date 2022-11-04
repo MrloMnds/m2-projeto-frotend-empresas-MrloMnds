@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenzie Empresas - Cadastro</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../globalStyles.css">
+    <link rel="stylesheet" href="../toast.css">
+    <link rel="stylesheet" href="./styles/register.css">
+    <link rel="stylesheet" href="./styles/dropDownRegister.css">
+</head>
+<body>
+    <main>
+        <header>
+            <div>
+                <img src="../assets/img/Ellipse 1.png" alt="">
+                <img class="title" src="../assets/img/Kenzie Empresas.png" alt="Kenzie Empresas">
+            </div>
+            <button class="dropdown"><img src="../assets/img/Vector.png" alt=""></button>
+            <div class="botoes-desktop">
+                <button class="home">Home</button>
+                <button class="login">Login</button>
+            </div>
+        </header>
+        <div hidden class="modal-dropdown">
+            <button hidden type="button" class="home-dropdown">Home</button>
+            <button hidden type="button" class="login-dropdown">login</button>
+        </div>
+        <section class="bckgrnd-img">
+            <img src="../assets/img/Rectangle 7.png" alt="Tres homens tendo uma reuniao">
+        </section>
+        <form>
+            <h1>Cadastre-se</h1>
+            <input type="text" id="username" placeholder="Seu nome">
+            <input id="email" type="email" placeholder="Seu e-mail">
+            <input id="password" type="password" placeholder="Sua senha">
+            <select name="nivelProfissional" id="professional_level">
+                <option value="null" selected>Nível profissional</option>
+                <option value="estágio">Estágio</option>
+                <option value="júnior">Júnior</option>
+                <option value="sênior">Sênior</option>
+                <option value="pleno">Pleno</option>
+            </select>
+            <button type="submit" class="register">Cadastre-se</button>
+            <button type="button" class="retornar">Retornar</button>
+        </form>
+    </main>
+    <script type="module" src="./scripts/register.js"></script>
+</body>
+</html>

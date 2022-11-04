@@ -1,0 +1,152 @@
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+}
+header>div {
+    display: flex;
+    align-items: center;
+    gap: 3%;
+}
+.title {
+    height: 1.1rem;
+}
+header>button {
+    border: none;
+    background-color: transparent;
+}
+.botoes-desktop {
+    display: flex;
+    gap: 5%;
+    width: 20%;
+    display: none;
+}
+.botoes-desktop>button {
+    border: 2px solid var(--color-brand-100);
+    height: 90%;
+    width: 100%;
+    font-size: var(--font-size-5);
+    font-weight: 700;
+}
+.botoes-desktop>button:hover {
+    cursor: pointer;
+}
+.bckgrnd-img {
+    display: none;
+}
+
+/* Select */
+#selecionarSetor {
+    background-color: var(--color-brand-100);
+    border: none;
+    color: white;
+    width: 100%;
+    padding: 14px;
+    margin-top: 5%;
+    font-size: var(--font-size-4);
+}
+#selecionarSetor:focus {
+    border: none;
+}
+
+/* Lista Empresas */
+.lista-empresas {
+    font-family: 'Inter', sans-serif;
+    background-color: #F8F8F8;
+    display: flex;
+    overflow-x: auto;
+    gap: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.lista-empresas>li {
+    min-width: 200px;
+    border-bottom: 1px solid var(--color-brand-100);
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    min-height: 180px;
+}
+.lista-empresas>li>h2 {
+    font-size: var(--font-size-3);
+    font-weight: 700;
+}
+.lista-empresas>li>div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.lista-empresas>li>div>p {
+    margin-left: 10px;
+}
+.div-sector {
+    border: 2px solid var(--color-brand-100);
+    width: fit-content;
+    padding: 3%;
+    border-radius: 255px;
+}
+.div-sector>a {
+    color: var(--color-brand-100);
+}
+
+
+/* Descktop */
+@media (min-width: 769px) {
+    main {
+        padding: 0;
+        max-width: 85%;
+        margin: 0 auto;
+    }
+    body {
+        padding-top: 2vh;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .dropdown {
+        display: none;
+    }
+    .modal-dropdown {
+        display: none;
+        padding: 0px;
+    }
+    .botoes-desktop{
+        display: flex;
+    }
+    #selecionar-setor {
+        margin-top: 0%;
+    }
+    .img-e-lista {
+        display: flex;
+        gap: 5%;
+        transform: translateY(-10vh);
+    }
+    .bckgrnd-img {
+        display: block;
+        margin-top: 2%;
+        width: 48%;
+        height: 80vh;
+        overflow: hidden;
+    }
+    .bckgrnd-img>img {
+        width: 100%;
+    }
+    .select-e-lista {
+        width: 48%;
+        height: 360vh;
+    }
+    .lista-empresas {
+        flex-direction: column;
+        overflow-y: auto;
+        gap: 20px;
+        max-height: 20%;
+        align-items: center;
+    }
+    .lista-empresas>li {
+        width: 90%;
+        min-height: 180px;
+    }
+    
+}

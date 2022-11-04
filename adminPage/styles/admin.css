@@ -1,0 +1,111 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Header */
+header {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #0000001A;
+    align-items: center;
+    padding-inline: 15%;
+}
+header>div {
+    display: flex;
+    align-items: center;
+    gap: 3%;
+}
+.title {
+    height: 1.2rem;
+}
+
+.logout {
+    background-color: transparent;
+    color: var(--color-brand-100);
+    border: 1px solid var(--color-brand-100);
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0.5% 3%;
+    height: 5vh;
+}
+
+.div-topo {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-inline: 15%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    align-items: center;
+}
+.div-topo>h2 {
+    font-size: var(--font-size-3);
+    font-weight: 700;
+}
+.div-topo>select {
+    border-radius: 15px;
+    padding-left: 1.5%;
+    font-size: var(--font-size-5);
+}
+.div-topo>button {
+    border: none;
+    background-color: var(--color-brand-100);
+    color: white;
+    height: 5vh;
+    width: 10%;
+}
+.div-topo>button:hover, .logout:hover, .department-card>div>button {
+    cursor: pointer;
+}
+
+.departamentos {
+    padding: 3%;
+    background-color: #F8F8F8;
+    margin-inline: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+    max-height: 44vh;
+    overflow: auto;
+}
+.department-card {
+    background-color: white;
+    width: 46.9%;
+    padding: 2%;
+    border-bottom: 2px solid var(--color-brand-100);
+    margin-bottom: 5%;
+}
+.department-card>h3 {
+    font-weight: 700;
+    font-size: var(--font-size-4);
+    margin-bottom: 3%;
+}
+.department-card>p {
+    margin-bottom: 3%;
+}
+.department-card>div {
+    display: flex;
+    gap: 2.5%;
+    margin-left: 30%;
+}
+.department-card>div>button {
+    border: none;
+    background-color: transparent;
+}
+
+.usuarios-cadastrados {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+.usuarios-cadastrados>h2 {
+    font-size: var(--font-size-2);
+    font-weight: 700;
+    margin-bottom: 5vh;
+}
+#listaUsuarios {
+    width: 70%;
+}

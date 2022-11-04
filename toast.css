@@ -1,0 +1,22 @@
+.toast-success, .toast-error {
+    position: fixed;
+    z-index: 1;
+    bottom: 10px;
+    right: 10px;
+    width: 18vw;
+    height: 10vh;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.toast-success>p, .toast-error>p {
+    color: white;
+    font-weight: 700;
+    margin-left: 2vw;
+}
+.toast-success {
+    background-color: var(--color-alert-success);
+}
+.toast-error {
+    background-color: var(--color-alert-error);
+}

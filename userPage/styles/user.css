@@ -1,0 +1,112 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Header */
+header {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #0000001A;
+    align-items: center;
+    padding-inline: 15%;
+}
+header>div {
+    display: flex;
+    align-items: center;
+    gap: 3%;
+}
+.title {
+    height: 1.2rem;
+}
+
+.logout {
+    background-color: transparent;
+    color: var(--color-brand-100);
+    border: 1px solid var(--color-brand-100);
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0.5% 3%;
+    height: 5vh;
+}
+
+.user-info {
+    border: 2px solid #00000033;
+    margin-inline: 15%;
+    margin-top: 5vh;
+    padding: 1.5%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+}
+.user-info>h2 {
+    font-size: var(--font-size-3);
+    font-weight: 700;
+}
+.user-info>div {
+    display: flex;
+    gap: 15%;
+}
+.user-info>div>p {
+    font-weight: 500;
+}
+.user-info>button {
+    position: absolute;
+    right: 1.5%;
+    top: 3.8vh;
+    border: none;
+    background-color: transparent;
+}
+.user-info>button:hover {
+    cursor: pointer;
+}
+
+.company-depart {
+    border: 2px solid #A8A8A8;
+    background-color: #F8F8F8;
+    margin-inline: 15%;
+    margin-top: 5vh;
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nao-contratado {
+    font-size: var(--font-size-3);
+    font-weight: 700;
+}
+
+.new-section {
+    background-color: #F8F8F8;
+    margin-inline: 15%;
+    margin-top: 5vh;
+}
+.new-section>h2 {
+    background-color: var(--color-brand-100);
+    color: white;
+    font-size: var(--font-size-3);
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    padding: 2vh 0;
+}
+.new-section>ul {
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+.new-section>ul>li {
+    background-color: white;
+    min-width: 30%;
+    border: 2px solid var(--color-brand-100);
+    padding: 1.5%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    margin-bottom: 1.5vh;
+}
+.new-section>ul>li>h3 {
+    font-weight: 700;
+}

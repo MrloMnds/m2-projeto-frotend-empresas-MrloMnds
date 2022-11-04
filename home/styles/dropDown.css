@@ -1,0 +1,28 @@
+.modal-dropdown {
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 0;
+}
+.modal-dropdown>button {
+    border: 2px solid var(--color-brand-100);
+    width: 48%;
+    height: 40px;
+    font-size: var(--font-size-5);
+    font-weight: 700;
+}
+.login {
+    background-color: transparent;
+    color: var(--color-brand-100);
+}
+.register {
+    background-color: var(--color-brand-100);
+    color: white;
+}
+.login-dropdown {
+    background-color: transparent;
+    color: var(--color-brand-100);
+}
+.register-dropdown {
+    background-color: var(--color-brand-100);
+    color: white;
+}

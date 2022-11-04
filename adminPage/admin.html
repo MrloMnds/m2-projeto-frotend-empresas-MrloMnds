@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenzie Empresas - Admin</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../globalStyles.css">
+    <link rel="stylesheet" href="../toast.css">
+    <link rel="stylesheet" href="./styles/admin.css">
+    <link rel="stylesheet" href="./styles/modal.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="../assets/img/Ellipse 1.png" alt="">
+            <img class="title" src="../assets/img/Kenzie Empresas.png" alt="Kenzie Empresas">
+        </div>
+        <button class="logout">Logout</button>
+    </header>
+
+    <section class="depart-section">
+        <div class="div-topo">
+            <h2>Departamentos</h2>
+            <select name="empresas" id="companies">
+                <option value="Selecionar empresa">Selecionar empresa</option>
+                <!-- gerar options via DOM -->
+            </select>
+            <button class="criar">+ Criar</button>
+        </div>
+        <div>
+            <ul class="departamentos">
+                
+            </ul>
+        </div>
+    </section>
+
+    <section class="usuarios-cadastrados">
+        <h2>Usuários cadastrados</h2>
+        <ul class="departamentos" id="listaUsuarios">
+
+        </ul>
+    </section>
+
+    <script type="module" src="./scripts/admin.js"></script>
+</body>
+</html>
